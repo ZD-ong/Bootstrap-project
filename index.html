@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html lang="zh-Hans">
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	  <title>Fullpage</title>
+	  <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" media="screen"/>
+	  <link rel="stylesheet" type="text/css" href="style/section.css" media="screen"/>
+	  <link rel="stylesheet" type="text/css" href="style/layout.css" media="screen"/>
+	  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <nav class="navbar navbar-inverse">
+	  <a class="navbar-brand" href="#">
+			<img alt="logo" src="images/logo5.png">
+		  </a>
+		    <ul class="nav nav-pills">
+							<li><a href="index.html" >Home</a></li>
+							<li><a href="Profile.html">Profile</a></li>
+							<li><a href="Experience.html">Experience</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+							<li><a href="Other.html">Other</a></li>
+			</ul>
+	</nav>
+	</nav>
+
+	  <div class="page">
+		<section>
+		  <div class="circle"><article>
+					<h1>Welcome</h1>
+					<p id="intro">Welcome to Dong's website.
+					<a href="index.html" title="Home">Here</a>, you can check my <a href="Profile.html" title="Profile">profile</a>,
+					find out about <a href="Experience.html" title="Experience">work</a> and <a href="Contact.html" title="Contact">get in touch with me</a>. Course view my <a href="Other.html" title="Other">hobbies.</a></p>
+				</article></div>
+		</section>
+		<section>
+		  <div class="circle">2</div>
+		</section>
+		<section>
+		  <div class="circle">3</div>
+		</section>
+		<section>
+		  <div class="circle">4</div>
+		</section>
+	  </div>
+
+	  <script src="scripts/dom.js"></script>
+	  <script src="scripts/view-source.js"></script>
+	  <script src="scripts/fullpage.js"></script>
+	  <script src="scripts/bootstrap.min.js"></script>
+	  <script>
+		new FullPage({
+		  element: document.querySelector('body > .page')
+		})
+	  </script>
+	  </body>
+	</html>
