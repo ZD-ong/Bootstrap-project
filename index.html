@@ -6,7 +6,33 @@
 	  <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" media="screen"/>
 	  <link rel="stylesheet" type="text/css" href="style/section.css" media="screen"/>
 	  <link rel="stylesheet" type="text/css" href="style/layout.css" media="screen"/>
-	  <body>
+	  <script src="scripts/jquery-3.2.1.min.js"></script>
+	  <script>
+    var myVar;
+
+    $(function () {
+      $("#typing_text").typed({
+        strings: ["Hi, i'm Joey Ding, this is my story..."],
+        typeSpeed: 2,
+        callback: function () {
+          $(".typed-cursor").hide();
+        }
+      });
+    });
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("typing_text").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+	  <script src="scripts/typed.js"></script>
+	  <body onload="myFunction()" >
+	  <section id="typing_text"></section>
+	  <div style="display:none;" id="myDiv" class="animate-bottom">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <nav class="navbar navbar-inverse">
 	  <a class="navbar-brand" href="#">
@@ -55,5 +81,6 @@
 		  element: document.querySelector('body > .page')
 		})
 	  </script>
+	  </div>
 	  </body>
 	</html>
