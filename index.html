@@ -28,8 +28,16 @@
 		document.getElementById("typing_text").style.display = "none";
 		document.getElementById("myDiv").style.display = "block";
 	}
+
 </script>
 <script src="scripts/typed.js"></script>
+<script>
+	$(document).ready(function () {
+		$('#page-wrap').css('display', 'none');
+		$('#page-wrap').delay(500).fadeIn(1000);
+	})
+
+</script>
 
 <body onload="myFunction()">
 	<section id="typing_text"></section>
@@ -59,86 +67,95 @@
 				<div style="display:none;" id="myDiv" class="animate-bottom">
 					<article>
 						<div class="swimlane-container">
-    
-        <div class="swimlane social-proof">
-    
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="carousel-social-proof" class="carousel slide" data-ride="carousel" data-interval="false">
-    
-                        <div class="carousel-inner" role="listbox">
-                            
-                            <div class="item active">
-                                <div class="container-fluid">
-                                    <div class="row tweets" tabindex="0" aria-label="Tweets list contains 6 tweets">
-                                        <!-- Tweet -->
-                                        <div id="tweet-0_0" class="col-md-4">
+							<div class="swimlane social-proof">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-12">
+											<div id="carousel-social-proof" class="carousel slide" data-ride="carousel" data-interval="false">
+												<div class="carousel-inner" role="listbox">
+													<div class="item active">
+														<div class="container-fluid">
+															<div class="row tweets" tabindex="0" aria-label="Tweets list contains 6 tweets">
+																<!-- Tweet -->
+																<div id="tweet-0_0" class="col-md-4">
 
-                                                <!--<img src="images/100.gif" class="profile-image img-circle"> Dong's webiste <b class="caret"></b></a>-->
-                                                <div class="text-content">
-                                                    <a class="attribution" href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">
-                                                        <strong id="tweet-0_0-name" class="name">Dong's website</strong>
-                                                        <span class="handle" src="#">@_ZD-ong</span>
-                                                    </a>
-                                                    <div class="tweet-body">
-                                                        <a href="https://github.com/ZD-ong" target="_blank")>@github</a> This is my first Version of personal page, used some basic HTML, CSS and Javascript. Front-end development could be a suitable break point of my development career.  <a href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank"></br>#Personal Page👈</a>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                        <div id="tweet-0_1" class="col-md-4"> 
-                                                <a class="profile-image" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank" role="img" aria-labelledby="tweet-0_1-name" style="background-image: url('/socialproof/twitterprofiles/stefanbc.jpg')"></a>
-                                                <div class="text-content">
-                                                    <a class="attribution" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank">
-                                                        <strong id="tweet-0_1-name" class="name">Stefan Cosma</strong>
-                                                        <span class="handle" src="#">@stefanbc</span>
-                                                    </a>
-                                                    <div class="tweet-body">
-                                                        Pushed my first commit using <a href="https://twitter.com/code" target="_blank")>@code</a> in under 15s. 💯
-                                                    </div>
-                                                </div>
-                                        </div>
-                                        <div id="tweet-0_2" class="col-md-4">
-                                                <a class="profile-image" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank" role="img" aria-labelledby="tweet-0_2-name" style="background-image: url('/socialproof/twitterprofiles/Superdajk.jpg')"></a>
-                                                <div class="text-content">
-                                                    <a class="attribution" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank">
-                                                        <strong id="tweet-0_2-name" class="name">Peter Dijkstra</strong>
-                                                        <span class="handle" src="#">@Superdajk</span>
-                                                    </a>
-                                                    <div class="tweet-body">
-                                                        Visual Studio <a href="https://twitter.com/code" target="_blank")>@code</a> has been my main code editor for quite a while now, and it seems to continue being that 👍👍👍👍
-                                                    </div>
-                                                </div>
-                                        </div>
-    
-                                    </div>
-                                </div>
-                            </div>
+																	<!--<img src="images/100.gif" class="profile-image img-circle"> Dong's webiste <b class="caret"></b></a>-->
+																	<div class="text-content">
+																		<a class="attribution" href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">
+																														<strong id="tweet-0_0-name" class="name">Dong's website</strong>
+																														<span class="handle" src="#">@_ZD-ong</span>
+																													</a>
+																		<div class="tweet-body">
+																			<a href="https://github.com/ZD-ong" target="_blank" )>@github</a> This is my first Version of personal
+																			page, used some basic HTML, CSS and Javascript. Front-end development could be a suitable break point
+																			of my development career. <a href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">#Personal Page??</a>
+																		</div>
+																	</div>
+																</div>
+																<div id="tweet-0_1" class="col-md-4">
+																	<a class="profile-image" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank" role="img" aria-labelledby="tweet-0_1-name"
+																	 style="background-image: url('/socialproof/twitterprofiles/stefanbc.jpg')"></a>
+																	<div class="text-content">
+																		<a class="attribution" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank">
+																														<strong id="tweet-0_1-name" class="name">Stefan Cosma</strong>
+																														<span class="handle" src="#">@stefanbc</span>
+																													</a>
+																		<div class="tweet-body">
+																			Pushed my first commit using <a href="https://twitter.com/code" target="_blank" )>@code</a> in under 15s.
+																			??
+																		</div>
+																	</div>
+																</div>
+																<div id="tweet-0_2" class="col-md-4">
+																	<a class="profile-image" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank" role="img" aria-labelledby="tweet-0_2-name"
+																	 style="background-image: url('/socialproof/twitterprofiles/Superdajk.jpg')"></a>
+																	<div class="text-content">
+																		<a class="attribution" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank">
+																														<strong id="tweet-0_2-name" class="name">Peter Dijkstra</strong>
+																														<span class="handle" src="#">@Superdajk</span>
+																													</a>
+																		<div class="tweet-body">
+																			Visual Studio <a href="https://twitter.com/code" target="_blank" )>@code</a> has been my main code editor
+																			for quite a while now, and it seems to continue being that ????????
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</article>
 				</div>
 			</div>
 		</section>
-		<section >
+		<section>
 			<div class="circle experience">
-  <a href="#" data-filter="all" tabindex="-1">ALL</a> 
-  <a href="#" data-filter="red" tabindex="-1">RED</a>
-  <a href="#" data-filter="green" tabindex="-1">GREEN</a>
-  <a href="#" data-filter="blue" tabindex="-1">BLUE</a>
+				<a href="#" data-filter="all" tabindex="-1">ALL</a>
+				<a href="#" data-filter="red" tabindex="-1">RED</a>
+				<a href="#" data-filter="green" tabindex="-1">GREEN</a>
+				<a href="#" data-filter="blue" tabindex="-1">BLUE</a>
 
-<div data-filter="red"></div>
-<div data-filter="blue"></div>
-<div data-filter="red"></div>
-<div data-filter="blue"></div>
-<div data-filter="green"></div>
-<div data-filter="red"></div>
-<div data-filter="red"></div>
-<div data-filter="red"></div>
-<div data-filter="blue"></div>
-<div data-filter="green"></div>
-<div data-filter="blue"></div>
-<div data-filter="green"></div>
-<div data-filter="green"></div>
- </div>
+				<div data-filter="red"></div>
+				<div data-filter="blue"></div>
+				<div data-filter="red"></div>
+				<div data-filter="blue"></div>
+				<div data-filter="green"></div>
+				<div data-filter="red"></div>
+				<div data-filter="red"></div>
+				<div data-filter="red"></div>
+				<div data-filter="blue"></div>
+				<div data-filter="green"></div>
+				<div data-filter="blue"></div>
+				<div data-filter="green"></div>
+				<div data-filter="green"></div>
+			</div>
 		</section>
 		<section>
 			<div class="circle">3</div>
