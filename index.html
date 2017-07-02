@@ -12,7 +12,7 @@
 
 	$(function () {
 		$("#typing_text").typed({
-			strings: ["Welcome to Dong's website...</br></br> Here, you can check my profile, </br>find out about work and get in touch with me, </br>course view my hobbies..."],
+			strings: ["Welcome to Dong's website...</br></br> Here, you can check my profile, </br>find out about work and get in touch with me, </br>course view my hobbies...😶😐🙂😄😆😝"],
 			typeSpeed: 30,
 			callback: function () {
 				$(".typed-cursor").hide();
@@ -33,9 +33,12 @@
 <script src="scripts/typed.js"></script>
 <script>
 	$(document).ready(function () {
-		$('#page-wrap').css('display', 'none');
-		$('#page-wrap').delay(500).fadeIn(1000);
-	})
+		$("button").click(function () {
+			$("#tweet-0_0").fadeIn();
+			$("#tweet-0_1").fadeIn("slow");
+			$("#tweet-0_2").fadeIn(3000);
+		});
+	});
 
 </script>
 
@@ -60,7 +63,6 @@
 			</ul>
 		</nav>
 	</nav>
-
 	<div class="page">
 		<section>
 			<div class="circle">
@@ -78,13 +80,12 @@
 															<div class="row tweets" tabindex="0" aria-label="Tweets list contains 6 tweets">
 																<!-- Tweet -->
 																<div id="tweet-0_0" class="col-md-4">
-
 																	<!--<img src="images/100.gif" class="profile-image img-circle"> Dong's webiste <b class="caret"></b></a>-->
 																	<div class="text-content">
 																		<a class="attribution" href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">
-																														<strong id="tweet-0_0-name" class="name">Dong's website</strong>
-																														<span class="handle" src="#">@_ZD-ong</span>
-																													</a>
+																			<strong id="tweet-0_0-name" class="name">Dong's website</strong>
+																			<span class="handle" src="#">@_ZD-ong</span>
+																		</a>
 																		<div class="tweet-body">
 																			<a href="https://github.com/ZD-ong" target="_blank" )>@github</a> This is my first Version of personal
 																			page, used some basic HTML, CSS and Javascript. Front-end development could be a suitable break point
