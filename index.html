@@ -12,8 +12,8 @@
 
     $(function () {
       $("#typing_text").typed({
-        strings: ["Hi, i'm Joey Ding, this is my story..."],
-        typeSpeed: 2,
+        strings: ["Welcome to Dong's website...</br></br> Here, you can check my profile, </br>find out about work and get in touch with me, </br>course view my hobbies..."],
+        typeSpeed: 30,
         callback: function () {
           $(".typed-cursor").hide();
         }
@@ -21,7 +21,7 @@
     });
 
     function myFunction() {
-      myVar = setTimeout(showPage, 3000);
+      myVar = setTimeout(showPage, 12000);
     }
 
     function showPage() {
@@ -32,7 +32,7 @@
 	  <script src="scripts/typed.js"></script>
 	  <body onload="myFunction()" >
 	  <section id="typing_text"></section>
-	  <div style="display:none;" id="myDiv" class="animate-bottom">
+	  
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <nav class="navbar navbar-inverse">
 	  <a class="navbar-brand" href="#">
@@ -54,12 +54,14 @@
 
 	  <div class="page">
 		<section>
-		  <div class="circle"><article>
+		  <div class="circle">
+		  <div style="display:none;" id="myDiv" class="animate-bottom">
+		  <article>
 					<h1>Welcome</h1>
 					<p id="intro">Welcome to Dong's website.
 					<a href="index.html" title="Home">Here</a>, you can check my <a href="Profile.html" title="Profile">profile</a>,
 					find out about <a href="Experience.html" title="Experience">work</a> and <a href="Contact.html" title="Contact">get in touch with me</a>. Course view my <a href="Other.html" title="Other">hobbies.</a></p>
-				</article></div>
+				</article>  </div></div>
 		</section>
 		<section>
 		  <div class="circle">2</div>
@@ -81,6 +83,6 @@
 		  element: document.querySelector('body > .page')
 		})
 	  </script>
-	  </div>
+	
 	  </body>
 	</html>
