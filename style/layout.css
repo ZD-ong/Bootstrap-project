@@ -16,10 +16,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-a:focus, a:hover {
-    color: #23527c;
-    text-decoration: none;
-}
+
 form {
     display: block;
     margin-top: 10px;
@@ -30,3 +27,85 @@ body {
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
 	}
+a:focus, a:hover {
+    color: grey;
+    text-decoration: none;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    outline: none;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.33);
+}
+.navbar-inverse {
+    background-color: #222;
+    border-color: transparent;
+}
+.experience{
+    display:block;
+  float:left;
+  border:2px solid green;
+  min-height:300px;
+  width:100%;
+  border-radius:4px;
+}
+.experience>a{ 
+  display:block;
+  float:left;
+  width:25%;
+  text-decoration:none;
+  text-align:center;
+  padding:5px 0;
+  color:white;
+  background:#1271C7;
+}
+.experience>div{
+    display:block;
+ float:left;
+ height:40px;
+ width:40px;
+ border:1px solid black;
+ margin:10px;
+ -webkit-transition:all .8s linear;
+ -moz-transition:all .8s linear;
+ -o-transition:all .8s linear;
+ -ms-transition:all .8s linear;
+ transition:all .8s linear;
+ margin-top:20px;
+}
+.experience>div[data-filter="red"]{
+  background:red;
+}
+.experience>div[data-filter="green"]{
+  background:green;
+}
+.experience>div[data-filter="blue"]{
+  background:blue;
+}
+.experience>a:focus[data-filter]{
+    opacity:.8;
+     outline:none;
+}
+.experience>a[data-filter="red"]:focus ~ div:not([data-filter="red"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+.experience>a[data-filter="green"]:focus ~ div:not([data-filter="green"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+.experience>a[data-filter="blue"]:focus ~ div:not([data-filter="blue"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}

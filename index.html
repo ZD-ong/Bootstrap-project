@@ -1,88 +1,163 @@
 <!DOCTYPE html>
-	<html lang="zh-Hans">
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	  <title>Fullpage</title>
-	  <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" media="screen"/>
-	  <link rel="stylesheet" type="text/css" href="style/section.css" media="screen"/>
-	  <link rel="stylesheet" type="text/css" href="style/layout.css" media="screen"/>
-	  <script src="scripts/jquery-3.2.1.min.js"></script>
-	  <script>
-    var myVar;
+<html lang="zh-Hans">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Fullpage</title>
+<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style/section.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style/layout.css" media="screen" />
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script>
+	var myVar;
 
-    $(function () {
-      $("#typing_text").typed({
-        strings: ["Welcome to Dong's website...</br></br> Here, you can check my profile, </br>find out about work and get in touch with me, </br>course view my hobbies..."],
-        typeSpeed: 30,
-        callback: function () {
-          $(".typed-cursor").hide();
-        }
-      });
-    });
+	$(function () {
+		$("#typing_text").typed({
+			strings: ["Welcome to Dong's website...</br></br> Here, you can check my profile, </br>find out about work and get in touch with me, </br>course view my hobbies..."],
+			typeSpeed: 30,
+			callback: function () {
+				$(".typed-cursor").hide();
+			}
+		});
+	});
 
-    function myFunction() {
-      myVar = setTimeout(showPage, 12000);
-    }
+	function myFunction() {
+		myVar = setTimeout(showPage, 1000);
+	}
 
-    function showPage() {
-      document.getElementById("typing_text").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-  </script>
-	  <script src="scripts/typed.js"></script>
-	  <body onload="myFunction()" >
-	  <section id="typing_text"></section>
-	  
+	function showPage() {
+		document.getElementById("typing_text").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+</script>
+<script src="scripts/typed.js"></script>
+
+<body onload="myFunction()">
+	<section id="typing_text"></section>
+
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <nav class="navbar navbar-inverse">
-	  <a class="navbar-brand" href="#">
+		<nav class="navbar navbar-inverse">
+			<a class="navbar-brand" href="#">
 			<img alt="logo" src="images/logo5.png">
 		  </a>
-		    <ul class="nav nav-pills">
-							<li><a href="index.html" >Home</a></li>
-							<li><a href="Profile.html">Profile</a></li>
-							<li><a href="Experience.html">Experience</a></li>
-							<li><a href="Contact.html">Contact</a></li>
-							<li><a href="Other.html">Other</a></li>
-							<form class="form-inline" align="right">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+			<ul class="nav nav-pills">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Profile.html">Profile</a></li>
+				<li><a href="Experience.html">Experience</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+				<li><a href="Other.html">Other</a></li>
+				<form class="form-inline" align="right">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
 			</ul>
-	</nav>
+		</nav>
 	</nav>
 
-	  <div class="page">
+	<div class="page">
 		<section>
-		  <div class="circle">
-		  <div style="display:none;" id="myDiv" class="animate-bottom">
-		  <article>
-					<h1>Welcome</h1>
-					<p id="intro">Welcome to Dong's website.
-					<a href="index.html" title="Home">Here</a>, you can check my <a href="Profile.html" title="Profile">profile</a>,
-					find out about <a href="Experience.html" title="Experience">work</a> and <a href="Contact.html" title="Contact">get in touch with me</a>. Course view my <a href="Other.html" title="Other">hobbies.</a></p>
-				</article>  </div></div>
-		</section>
-		<section>
-		  <div class="circle">2</div>
-		</section>
-		<section>
-		  <div class="circle">3</div>
-		</section>
-		<section>
-		  <div class="circle">4</div>
-		</section>
-	  </div>
+			<div class="circle">
+				<div style="display:none;" id="myDiv" class="animate-bottom">
+					<article>
+						<div class="swimlane-container">
+    
+        <div class="swimlane social-proof">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="carousel-social-proof" class="carousel slide" data-ride="carousel" data-interval="false">
+    
+                        <div class="carousel-inner" role="listbox">
+                            
+                            <div class="item active">
+                                <div class="container-fluid">
+                                    <div class="row tweets" tabindex="0" aria-label="Tweets list contains 6 tweets">
+                                        <!-- Tweet -->
+                                        <div id="tweet-0_0" class="col-md-4">
 
-	  <script src="scripts/dom.js"></script>
-	  <script src="scripts/view-source.js"></script>
-	  <script src="scripts/fullpage.js"></script>
-	  <script src="scripts/bootstrap.min.js"></script>
-	  <script>
+                                                <!--<img src="images/100.gif" class="profile-image img-circle"> Dong's webiste <b class="caret"></b></a>-->
+                                                <div class="text-content">
+                                                    <a class="attribution" href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">
+                                                        <strong id="tweet-0_0-name" class="name">Dong's website</strong>
+                                                        <span class="handle" src="#">@_ZD-ong</span>
+                                                    </a>
+                                                    <div class="tweet-body">
+                                                        <a href="https://github.com/ZD-ong" target="_blank")>@github</a> This is my first Version of personal page, used some basic HTML, CSS and Javascript. Front-end development could be a suitable break point of my development career.  <a href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank"></br>#Personal Page👈</a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div id="tweet-0_1" class="col-md-4"> 
+                                                <a class="profile-image" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank" role="img" aria-labelledby="tweet-0_1-name" style="background-image: url('/socialproof/twitterprofiles/stefanbc.jpg')"></a>
+                                                <div class="text-content">
+                                                    <a class="attribution" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank">
+                                                        <strong id="tweet-0_1-name" class="name">Stefan Cosma</strong>
+                                                        <span class="handle" src="#">@stefanbc</span>
+                                                    </a>
+                                                    <div class="tweet-body">
+                                                        Pushed my first commit using <a href="https://twitter.com/code" target="_blank")>@code</a> in under 15s. 💯
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div id="tweet-0_2" class="col-md-4">
+                                                <a class="profile-image" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank" role="img" aria-labelledby="tweet-0_2-name" style="background-image: url('/socialproof/twitterprofiles/Superdajk.jpg')"></a>
+                                                <div class="text-content">
+                                                    <a class="attribution" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank">
+                                                        <strong id="tweet-0_2-name" class="name">Peter Dijkstra</strong>
+                                                        <span class="handle" src="#">@Superdajk</span>
+                                                    </a>
+                                                    <div class="tweet-body">
+                                                        Visual Studio <a href="https://twitter.com/code" target="_blank")>@code</a> has been my main code editor for quite a while now, and it seems to continue being that 👍👍👍👍
+                                                    </div>
+                                                </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section >
+			<div class="circle experience">
+  <a href="#" data-filter="all" tabindex="-1">ALL</a> 
+  <a href="#" data-filter="red" tabindex="-1">RED</a>
+  <a href="#" data-filter="green" tabindex="-1">GREEN</a>
+  <a href="#" data-filter="blue" tabindex="-1">BLUE</a>
+
+<div data-filter="red"></div>
+<div data-filter="blue"></div>
+<div data-filter="red"></div>
+<div data-filter="blue"></div>
+<div data-filter="green"></div>
+<div data-filter="red"></div>
+<div data-filter="red"></div>
+<div data-filter="red"></div>
+<div data-filter="blue"></div>
+<div data-filter="green"></div>
+<div data-filter="blue"></div>
+<div data-filter="green"></div>
+<div data-filter="green"></div>
+ </div>
+		</section>
+		<section>
+			<div class="circle">3</div>
+		</section>
+		<section>
+			<div class="circle">4</div>
+		</section>
+	</div>
+
+	<script src="scripts/dom.js"></script>
+	<script src="scripts/view-source.js"></script>
+	<script src="scripts/fullpage.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<script>
 		new FullPage({
-		  element: document.querySelector('body > .page')
+			element: document.querySelector('body > .page')
 		})
-	  </script>
-	
-	  </body>
-	</html>
+	</script>
+
+</body>
+
+</html>
