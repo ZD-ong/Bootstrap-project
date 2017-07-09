@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="style/section.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="style/layout.css" media="screen" />
-<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/jquery.min.js"></script>
 <script>
 	var myVar;
 
@@ -137,13 +137,17 @@
 			</div>
 		</section>
 		<section>
-			<div class="circle experience col-md-12  text-center gallery-trigger">
+			<div class="container">
+			<div class="row" >
+			<div class="circle col-md-12  text-center gallery-trigger">
 				<ul>
-					<li><a class="filter" href="#" data-filter="all" tabindex="-1">ALL</a></li>
-					<li><a class="filter" href="#" data-filter="Youhua" tabindex="-1">Youhua Technology</a></li>
-					<li><a class="filter" href="#" data-filter="Isoftstone" tabindex="-1">Isoftstone</a></li>
-					<li><a class="filter" href="#" data-filter="Pactera" tabindex="-1">Pactera</a></li>
+					<li><a class="filter" href="#" data-filter="all" >ALL</a></li>
+					<li><a class="filter" href="#" data-filter=".Youhua" >Youhua Technology</a></li>
+					<li><a class="filter" href="#" data-filter=".Isoftstone" >Isoftstone</a></li>
+					<li><a class="filter" href="#" data-filter=".Pactera" >Pactera</a></li>
 				</ul>
+				</div>
+				</div>
 				<!--
 				<div data-filter="Youhua"></div>
 				<div data-filter="Pactera"></div>
@@ -158,31 +162,41 @@
 				<div data-filter="Pactera"></div>
 				<div data-filter="Isoftstone">Skype for Business</div>
 				<div data-filter="Isoftstone">Microsoft Teams</div>-->
-				     <div class="mix Isoftstone" data-myorder="2">
-                                <span class="clearfix">
-                                
-                                <span style="left: 166px; right: 44px;"></span>
-                                <span >54e5dy6rfdrufuyf</span>
-                                </span>
-                                <span >jhklhgjkgkhggHJ</span>
-                            </div>
-							 <div class="mix Isoftstone" data-myorder="2">
-                                <span class="clearfix">
-                                
-                                <span style="left: 166px; right: 44px;"></span>
-                                <span >54e5dy6rfdrufuyf</span>
-                                </span>
-                                <span >jhklhgjkgkhggHJ</span>
-                            </div>
-							 <div class="mix Pactera" data-myorder="2">
-                                <span class="clearfix">
-                                
-                                <span style="left: 166px; right: 44px;"></span>
-                                <span >54e5dy6rfdrufuyf</span>
-                                </span>
-                                <span >jhklhgjkgkhggHJ</span>
-                            </div>
-							
+				    <div class="row">
+					 <div class="col-md-12">
+					 <div id="Container">
+					 <div class="mix Isoftstone menu-restaurant " data-myorder="2">
+						<span class="clearfix">
+						<span style="left: 166px; right: 44px;" class="menu-line"></span>
+						<span class="project-title">Skype</span>
+						<span class="project-period">5/25/2016-5/19/2017</span>
+						</span>
+						<span class="project-description">Localization Testing</span>
+						
+					</div>
+							 <div class="mix Pactera menu-restaurant " data-myorder="2">
+						<span class="clearfix">
+						
+						<span style="left: 166px; right: 44px;" class="menu-line"></span>
+						<span class="project-title">Microsoft Teams</span>
+						<span class="project-period">5/25/2016-5/19/2017</span>
+						</span>
+						<span class="project-description">Localization Testing</span>
+						
+					</div>
+							<div class="mix Isoftstone menu-restaurant " data-myorder="2">
+						<span class="clearfix">
+						
+						<span style="left: 166px; right: 44px;" class="menu-line"></span>
+						<span class="project-title">Skype for Business</span>
+						<span class="project-period">5/25/2016-5/19/2017</span>
+						</span>
+						<span class="project-description">Localization Testing</span>
+						
+					</div>
+					</div>
+						</div>
+						</div>	
 			</div>
 
 		</section>
@@ -197,6 +211,9 @@
 	<script src="scripts/dom.js"></script>
 	<script src="scripts/view-source.js"></script>
 	<script src="scripts/fullpage.js"></script>
+	
+	<script src="scripts/jquery.mixitup.min.js"></script>
+	<script src="scripts/custom.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
 	<script>
 		new FullPage({

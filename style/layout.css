@@ -51,6 +51,51 @@ a:focus, a:hover {
     background-color: #373277;
     border-color: transparent;
 }
+#Container .mix {
+    display: none;
+}
+.menu-restaurant {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+.menu-restaurant .project-title {
+    float: left;
+    font-family: Montserrat, arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFB03B;
+}
+.menu-restaurant span.clearfix {
+    position: relative;
+    display: block;
+}
+.menu-restaurant .menu-line {
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, .3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+.menu-restaurant .project-period {
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu-restaurant .project-description {
+    display: block;
+    float: left;
+    color: #B1B1B1;
+    font-family: Satisfy, 'Open Sans', arial;
+    font-size: 1.2rem;
+}
+.menu-restaurant span.clearfix {
+    position: relative;
+    display: block;
+}
+/**
 .experience{
     display:block;
   float:left;
@@ -114,6 +159,7 @@ a:focus, a:hover {
   border:none;
   margin:0;
 }
+**/
 .gallery-trigger ul li a.active,
 .gallery-trigger ul li a:hover {
     background: #FFB03B;
