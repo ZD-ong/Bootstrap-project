@@ -3,6 +3,7 @@
     position: relative;
     display: block;
     padding: 15px 15px;
+     color: #ffffff
 }
 section {
     height: 100vh;
@@ -10,13 +11,17 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-	color: #ffffff;
+	color: #444;
+    font-weight: 900;
 }
 a {
-    color: #ffffff;
+    color: ##337ab7;
     text-decoration: none;
 }
-
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: darkgray;
+}
 form {
     display: block;
     margin-top: 10px;
@@ -43,13 +48,13 @@ a:focus, a:hover {
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.33);
 }
 .navbar-inverse {
-    background-color: #222;
+    background-color: #373277;
     border-color: transparent;
 }
 .experience{
     display:block;
   float:left;
-  border:2px solid green;
+ 
   min-height:300px;
   width:100%;
   border-radius:4px;
@@ -61,8 +66,8 @@ a:focus, a:hover {
   text-decoration:none;
   text-align:center;
   padding:5px 0;
-  color:white;
-  background:#1271C7;
+  color: #444;
+  background:transparent;
 }
 .experience>div{
     display:block;
@@ -78,32 +83,32 @@ a:focus, a:hover {
  transition:all .8s linear;
  margin-top:20px;
 }
-.experience>div[data-filter="red"]{
+.experience>div[data-filter="Youhua"]{
   background:red;
 }
-.experience>div[data-filter="green"]{
+.experience>div[data-filter="Isoftstone"]{
   background:green;
 }
-.experience>div[data-filter="blue"]{
+.experience>div[data-filter="Pactera"]{
   background:blue;
 }
 .experience>a:focus[data-filter]{
     opacity:.8;
      outline:none;
 }
-.experience>a[data-filter="red"]:focus ~ div:not([data-filter="red"]){
+.experience>a[data-filter="Youhua"]:focus ~ div:not([data-filter="Youhua"]){
   height:0px;
   width:0px;
   border:none;
   margin:0;
 }
-.experience>a[data-filter="green"]:focus ~ div:not([data-filter="green"]){
+.experience>a[data-filter="Isoftstone"]:focus ~ div:not([data-filter="Isoftstone"]){
   height:0px;
   width:0px;
   border:none;
   margin:0;
 }
-.experience>a[data-filter="blue"]:focus ~ div:not([data-filter="blue"]){
+.experience>a[data-filter="Pactera"]:focus ~ div:not([data-filter="Pactera"]){
   height:0px;
   width:0px;
   border:none;
