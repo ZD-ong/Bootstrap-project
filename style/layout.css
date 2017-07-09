@@ -5,6 +5,10 @@
     padding: 15px 15px;
      color: #ffffff
 }
+#logo{
+        margin-top: -8px;
+        margin-right: 50px;
+}
 section {
     height: 100vh;
     display: flex;
@@ -16,11 +20,14 @@ section {
 }
 #section2{
     align-items: stretch; 
-    margin-top: 80px; 
+    margin-top: 120px; 
+    font-size: 10px;
 }
-
+.header-h{
+    color: #373277
+}
 a {
-    color: ##337ab7;
+    color: #337ab7;
     text-decoration: none;
 }
 .nav>li>a:hover {
@@ -70,19 +77,13 @@ a:focus, a:hover {
     font-family: Montserrat, arial;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color: #373277;
 }
 .menu-restaurant span.clearfix {
     position: relative;
     display: block;
 }
-.menu-restaurant .menu-line {
-    position: absolute;
-    bottom: 6px;
-    border-bottom: 1px dotted rgba(0, 0, 0, .3);
-    margin-left: .6rem;
-    margin-right: .6rem;
-}
+
 .menu-restaurant .project-period {
     font-weight: 600;
     position: absolute;
@@ -167,9 +168,9 @@ a:focus, a:hover {
 **/
 .gallery-trigger ul li a.active,
 .gallery-trigger ul li a:hover {
-    background: #FFB03B;
+    background: #373277;
     color: #fff;
-    border: 1px solid #FFB03B;
+    border: 1px solid #373277;
 }
 
 .gallery-trigger ul li {
