@@ -21,7 +21,7 @@
 	});
 
 	function myFunction() {
-		myVar = setTimeout(showPage, 12000);
+		myVar = setTimeout(showPage, 1000);
 	}
 
 	function showPage() {
@@ -67,74 +67,35 @@
 		<section>
 		
 			<div class="circle" >
-				<div style="display:none;" id="myDiv" class="animate-bottom">
-					<article>
-						<div class="swimlane-container">
-							<div class="swimlane social-proof">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12">
-											<div id="carousel-social-proof" class="carousel slide" data-ride="carousel" data-interval="false">
-												<div class="carousel-inner" role="listbox">
-													<div class="item active">
-														<div class="container-fluid">
-															<div class="row tweets" tabindex="0" aria-label="Tweets list contains 6 tweets">
-																<!-- Tweet -->
-																<div id="tweet-0_0" class="col-md-4">
-																	<!--<img src="images/100.gif" class="profile-image img-circle"> Dong's webiste <b class="caret"></b></a>-->
-																	<div class="text-content">
-																		<a class="attribution" href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">
-																			<strong id="tweet-0_0-name" class="name">Dong's website</strong>
-																			<span class="handle" src="#">@_ZD-ong</span>
-																		</a>
-																		<div class="tweet-body">
-																			<a href="https://github.com/ZD-ong" target="_blank" )>@github</a> This is my first Version of personal
-																			page, used some basic HTML, CSS and Javascript. Front-end development could be a suitable break point
-																			of my development career. <a href="https://zd-ong.github.io/Dongwebsite/index.html" target="_blank">#Personal Page👈</a>
-																		</div>
-																	</div>
-																</div>
-																<div id="tweet-0_1" class="col-md-4">
-																	<a class="profile-image" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank" role="img" aria-labelledby="tweet-0_1-name"
-																	 style="background-image: url('/socialproof/twitterprofiles/stefanbc.jpg')"></a>
-																	<div class="text-content">
-																		<a class="attribution" href="https://twitter.com/stefanbc/status/667084553706725377" target="_blank">
-																														<strong id="tweet-0_1-name" class="name">Stefan Cosma</strong>
-																														<span class="handle" src="#">@stefanbc</span>
-																													</a>
-																		<div class="tweet-body">
-																			Pushed my first commit using <a href="https://twitter.com/code" target="_blank" )>@code</a> in under 15s.
-																			💯
-																		</div>
-																	</div>
-																</div>
-																<div id="tweet-0_2" class="col-md-4">
-																	<a class="profile-image" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank" role="img" aria-labelledby="tweet-0_2-name"
-																	 style="background-image: url('/socialproof/twitterprofiles/Superdajk.jpg')"></a>
-																	<div class="text-content">
-																		<a class="attribution" href="https://twitter.com/Superdajk/status/667012853300334592" target="_blank">
-																														<strong id="tweet-0_2-name" class="name">Peter Dijkstra</strong>
-																														<span class="handle" src="#">@Superdajk</span>
-																													</a>
-																		<div class="tweet-body">
-																			Visual Studio <a href="https://twitter.com/code" target="_blank" )>@code</a> has been my main code editor
-																			for quite a while now, and it seems to continue being that 👍👍👍👍👍
-																		</div>
-																	</div>
-																</div>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
+				    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="first-slide" src="images/background.jpg" alt="First slide" width="100%" height="auto">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-left">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+      
+ 
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 			</div>
 			
 		</section>
